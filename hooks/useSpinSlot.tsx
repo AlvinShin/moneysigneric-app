@@ -52,7 +52,7 @@ export const UseSpinSlot: React.FC<{
             style={
                 {
                     "--trans-dist": `${-40 * (index + 1)}px`,
-                    "--trans-time": `${(index + 1) * 0.19}s`,
+                    "--trans-time": `${(index + 1) * 0.15}s`,
                 } as React.CSSProperties
             }
             className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_0s_forwards]"

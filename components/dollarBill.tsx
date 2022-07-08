@@ -10,7 +10,7 @@ interface dollarBillData {
 
 export const DollarBill: React.FC<dollarBillData> = ({ typeOfSocial, icon }) => {
     return (
-        <div className="cursor-pointer select-none h-[10rem] sm:h-[12rem] w-[23rem] sm:w-[25rem] bg-[#154d0f] text-[#fff] flex justify-center items-center">
+        <div className="cursor-pointer h-[10rem] sm:h-[12rem] w-[23rem] sm:w-[25rem] bg-[#154d0f] text-[#fff] flex justify-center items-center">
             <div className="h-[8rem] sm:h-[10rem] w-[21rem] sm:w-[23rem] bg-[#22661b] flex flex-col justify-center items-center">
                 <div className="w-[21rem] sm:w-[23rem] p-[0.5rem] sm:p-[0.7rem] h-[2rem] sm:h-[2.5rem] flex flex-row justify-between items-center">
                     <FontAwesomeIcon icon={faDollarSign} className="h-[1.5rem] sm:h-[2rem]" />
