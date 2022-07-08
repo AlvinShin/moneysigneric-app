@@ -9,7 +9,7 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
     const letters = text.split("");
 
     return (
-        <div className="flex flex-row justify-center items-center">
+        <div className="select-none flex flex-row justify-center items-center">
             {/* slot MACHINE */}
             <div className="flex flex-col justify-center items-center">
                 <div className="bg-[#fccb05] p-[0.35rem] sm:p-[0.4rem] rounded-[15px]">

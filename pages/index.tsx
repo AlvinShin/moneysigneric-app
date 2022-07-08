@@ -6,6 +6,7 @@ import YouTube from "react-youtube";
 import { Logo } from "../components/logo";
 import { Footer } from "../components/footer";
 import { Birthday } from "../components/birthday";
+import { Social } from "../components/social";
 
 const Home: NextPage = () => {
     // width tracking
@@ -31,12 +32,19 @@ const Home: NextPage = () => {
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
             <div className="h-[8rem] flex justify-center items-center bg-[#e0faee]">
-            <Logo text={"moneysigneric"} size={(width >= 640) ? "normal" : "small"} />
+                <Logo text={"moneysigneric"} size={(width >= 640) ? "normal" : "small"} />
             </div>
-            <div className="h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#e0faee] text-[#292929]">
+            <div className="h-full lg:h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#e0faee] bg-no-repeat bg-center text-[#292929]">
                 <Birthday />
-
-                <div className="text-center text-[35px] font-[700] tracking-[4px] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-600">Coming Soon</div>
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem] content-center"> 
+                    <li><Social typeOfSocial="youtube"/></li>
+                    <li><Social typeOfSocial="twitch"/></li>
+                    <li><Social typeOfSocial="instagram"/></li>
+                    <li><Social typeOfSocial="discord"/></li>
+                    <li className="block lg:hidden"><Social typeOfSocial="tiktok"/></li>
+                </ul>
+                <div className="mt-[1.5rem] hidden lg:block"><Social typeOfSocial="tiktok" /></div>
+                
                 {/* <div>
                     <h1 className="text-[25px] text-center mb-2">Check out my latest video!</h1>
                     <YouTube
