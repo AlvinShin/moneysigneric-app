@@ -30,13 +30,13 @@ const Home: NextPage = () => {
                 <title>moneysigneric</title>
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
-            <div className="h-[5rem] sm:h-[8rem] flex justify-center items-center bg-[#e0faee]">
-                <Logo text={"moneysigneric"} size={(width >= 640) ? "normal" : "small"} />
+            <div className="h-[8rem] flex justify-center items-center bg-[#e0faee]">
+                
             </div>
-            <div className="h-[calc(100vh-5rem)] sm:h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#e0faee] text-[#292929]">
+            <div className="h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#e0faee] text-[#292929]">
                 <Birthday />
+                <Logo text={"moneysigneric"} size={(width >= 640) ? "normal" : "small"} />
                 <div className="text-center text-[27px] font-[600] tracking-[3.5px] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-600">Coming Soon</div>
-
                 {/* <div>
                     <h1 className="text-[25px] text-center mb-2">Check out my latest video!</h1>
                     <YouTube
