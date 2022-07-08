@@ -17,19 +17,14 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
                         <div className="bg-[#3b4e52] p-[0.35rem] sm:p-[0.4rem] rounded-[15px]">
                             <div className="rounded-[15px] bg-[#fff] h-[2.5rem] flex flex-row overflow-hidden">
                                 {letters.map((e, index) => {
-                                    const slotColStyle = `translate-y-[${-40 * (index + 1)}px]`;
                                     return (
-                                        <div
-                                            className={slotColStyle}
+                                        <UseSpinSlot
+                                            textLen={letters.length}
+                                            letter={e}
+                                            index={index}
+                                            size={size}
                                             key={index + 1}
-                                        >
-                                            <UseSpinSlot
-                                                textLen={letters.length}
-                                                letter={e}
-                                                index={index}
-                                                size={size}
-                                            />
-                                        </div>
+                                        />
                                     )
                                 })}
                             </div>

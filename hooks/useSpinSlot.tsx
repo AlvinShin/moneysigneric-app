@@ -4,7 +4,7 @@ import Image from "next/image";
 const getRand = (max: number) => {
     return Math.floor(Math.random() * max);
 }
-{/*  */}
+
 export const UseSpinSlot: React.FC<{
     textLen: number,
     letter: string,
@@ -48,12 +48,21 @@ export const UseSpinSlot: React.FC<{
     }
 
     return (
-        <div>
+        <div
+            style={
+                {
+                    "--trans-dist": `${-40 * (index + 1)}px`,
+                    "--trans-time": `${(index + 1) * 0.1}s`,
+                } as React.CSSProperties
+            }
+            className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_0s_forwards]"
+            key={index + 1}
+        >
             <div
                 key={index + 1}
                 className={
                     "text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
-                    + ((index !== 0) ? "border-[#3b4e52] border-l-[3px] " : "")}
+                    + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
             >
                 {letter}
             </div>
@@ -62,7 +71,7 @@ export const UseSpinSlot: React.FC<{
                 return (
                     <div
                         key={index + 1}
-                        className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center " + ((index !== textLen) ? "border-[#3b4e52] border-l-[3px] " : "")}
+                        className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center " + ((index !== textLen) ? "border-[#3b4e52] border-l-[2px] " : "")}
                     >
                         {e}
                     </div>
