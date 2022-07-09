@@ -58,7 +58,6 @@ export const Slot: React.FC<{
             className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_1s_forwards]"
         >
             <div
-                key={index + 1}
                 className={
                     "text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
                     + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
