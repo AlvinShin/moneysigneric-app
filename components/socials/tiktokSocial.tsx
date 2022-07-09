@@ -5,7 +5,7 @@ import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 export const TiktokSocial = () => {
     return (
-        <Link href="https://www.instagram.com/moneysigneric">
+        <Link href="https://www.tiktok.com/@moneysigneric">
             <div className="cursor-pointer select-none bg-[#2e2d2d] border-[2.5px] sm:border-[4px] border-[#1f1e1e] w-[18rem] sm:w-[20rem] h-[10rem] sm:h-[12rem] rounded-[25px] text-[#fff] flex flex-col justify-evenly hover:scale-[1.02] transition-[200ms]">
                 <div className="mx-[0.5rem] inline-flex items-center">
                     <FontAwesomeIcon icon={faTiktok} className="h-[2.5rem] mr-[0.5rem]" />
