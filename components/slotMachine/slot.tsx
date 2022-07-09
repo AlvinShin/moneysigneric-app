@@ -36,14 +36,14 @@ export const Slot: React.FC<{
     const randNumInit = getRand(srcs.length);
     
     const slot: React.ReactElement<any, any>[] = [
-        <Image src={srcs[randNumInit]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} />
+        <Image src={srcs[randNumInit]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" />
     ];
     srcs.slice(randNumInit, 1);
 
 
     for (var numSlots = 0; numSlots < index; numSlots++) {
         const randNum = getRand(srcs.length);
-        slot.push(<Image src={srcs[randNum]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} />);
+        slot.push(<Image src={srcs[randNum]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" />);
         srcs.splice(randNum, 1);
     }
 
@@ -56,7 +56,6 @@ export const Slot: React.FC<{
                 } as React.CSSProperties
             }
             className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_1s_forwards]"
-            key={index + 1}
         >
             <div
                 key={index + 1}
