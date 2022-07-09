@@ -1,5 +1,5 @@
 import React from "react";
-import { UseSpinSlot } from "../hooks/useSpinSlot";
+import { Slot } from "./slot";
 
 
 export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
@@ -18,7 +18,7 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
                             <div className="rounded-[15px] bg-[#fff] h-[2.5rem] flex flex-row overflow-hidden">
                                 {letters.map((e, index) => {
                                     return (
-                                        <UseSpinSlot
+                                        <Slot
                                             textLen={letters.length}
                                             letter={e}
                                             index={index}
