@@ -6,12 +6,10 @@ const getRand = (max: number) => {
 }
 
 export const Slot: React.FC<{
-    textLen: number,
     letter: string,
     index: number,
     size: "normal" | "small",
 }> = ({
-    textLen,
     letter,
     index,
     size,
@@ -36,19 +34,20 @@ export const Slot: React.FC<{
     const randNumInit = getRand(srcs.length);
     
     const slot: React.ReactElement<any, any>[] = [
-        <Image src={srcs[randNumInit]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" />
+        <Image src={srcs[randNumInit]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" key={1} />
     ];
     srcs.slice(randNumInit, 1);
 
 
     for (var numSlots = 0; numSlots < index; numSlots++) {
         const randNum = getRand(srcs.length);
-        slot.push(<Image src={srcs[randNum]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" />);
+        slot.push(<Image src={srcs[randNum]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" key={numSlots + 2} />);
         srcs.splice(randNum, 1);
     }
 
     return (
         <div
+            key={index + 1}
             style={
                 {
                     "--trans-dist": `${-40 * (index + 1)}px`,
@@ -58,6 +57,7 @@ export const Slot: React.FC<{
             className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_1s_forwards]"
         >
             <div
+                key={1}
                 className={
                     "text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
                     + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
@@ -68,7 +68,7 @@ export const Slot: React.FC<{
             {slot.map((e, index) => {
                 return (
                     <div
-                        key={index + 1}
+                        key={index + 2}
                         className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center " + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
                     >
                         {e}

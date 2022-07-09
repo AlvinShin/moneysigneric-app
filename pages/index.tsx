@@ -37,7 +37,7 @@ const Home: NextPage = () => {
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
             <div className="h-[8rem] flex justify-center items-center bg-[#e0faee]">
-                <Logo text={"moneysigneric"} size={(width >= 640) ? "normal" : "small"} />
+                <Logo text="moneysigneric" size={(width >= 640) ? "normal" : "small"} />
             </div>
             <div className="h-full lg:h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#e0faee] bg-no-repeat bg-center text-[#292929]">
                 <Birthday />

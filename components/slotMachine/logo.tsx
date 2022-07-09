@@ -19,7 +19,6 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
                                 {letters.map((e, index) => {
                                     return (
                                         <Slot
-                                            textLen={letters.length}
                                             letter={e}
                                             index={index}
                                             size={size}
