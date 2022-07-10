@@ -1,7 +1,6 @@
 import React from "react";
 import { Slot } from "./slot";
 
-
 export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
     text,
     size
@@ -19,6 +18,7 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
                                 {letters.map((e, index) => {
                                     return (
                                         <Slot
+                                            textLen={text.length}
                                             letter={e}
                                             index={index}
                                             size={size}

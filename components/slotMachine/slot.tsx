@@ -6,10 +6,12 @@ const getRand = (max: number) => {
 }
 
 export const Slot: React.FC<{
-    letter: string,
-    index: number,
-    size: "normal" | "small",
+    textLen: number;
+    letter: string;
+    index: number;
+    size: "normal" | "small";
 }> = ({
+    textLen,
     letter,
     index,
     size,
@@ -60,7 +62,9 @@ export const Slot: React.FC<{
                 key={1}
                 className={
                     "text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
-                    + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
+                    + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
+                    + ((index === textLen) ? "rounded-r-[15px]" : "")
+                }
             >
                 {letter}
             </div>
@@ -69,7 +73,10 @@ export const Slot: React.FC<{
                 return (
                     <div
                         key={index + 2}
-                        className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center " + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")}
+                        className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center "
+                        + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")
+
+                    }
                     >
                         {e}
                     </div>
