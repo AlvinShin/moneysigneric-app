@@ -63,7 +63,7 @@ export const Slot: React.FC<{
                 className={
                     "text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
                     + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
-                    + ((index === textLen) ? "rounded-r-[15px]" : "")
+                    + ((index === textLen - 1) ? "rounded-r-[15px]" : "")
                 }
             >
                 {letter}
@@ -75,7 +75,6 @@ export const Slot: React.FC<{
                         key={index + 2}
                         className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center "
                         + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")
-
                     }
                     >
                         {e}
