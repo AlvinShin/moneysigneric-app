@@ -16,6 +16,7 @@ export const Slot: React.FC<{
     index,
     size,
 }) => {
+        const letterIndex = index;
         const srcs: string[] = [
             "/slotIcons/apple.png",
             "/slotIcons/bar.png",
@@ -74,8 +75,8 @@ export const Slot: React.FC<{
                         <div
                             key={index + 2}
                             className={"bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center "
-                                + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
-                                + ((index === textLen - 1) ? "rounded-r-[15px]" : "")
+                                + ((letterIndex !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
+                                + ((letterIndex === textLen - 1) ? "rounded-r-[15px]" : "")
                             }
                         >
                             {e}
