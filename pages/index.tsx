@@ -38,6 +38,7 @@ const Home: NextPage = () => {
                 <meta name="description" content="A website that contains Moneysigneric's socials" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="author" content="Made by Alvin Shin" />
+                <meta name="og:image" content="/favicon.png" />
             </Head>
             <div className="h-[8rem] flex justify-center items-center bg-[#e0faee]">
                 <Logo text="moneysigneric" size={(width >= 640) ? "normal" : "small"} />
