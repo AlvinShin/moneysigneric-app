@@ -16,7 +16,6 @@ export const Slot: React.FC<{
     index,
     size,
 }) => {
-        const letterIndex = index;
         const srcs: string[] = [
             "/slotIcons/apple.png",
             "/slotIcons/bar.png",
@@ -35,6 +34,7 @@ export const Slot: React.FC<{
         ];
 
         const randNumInit = getRand(srcs.length);
+        const letterIndex = index;
 
         const slot: React.ReactElement<any, any>[] = [
             <Image src={srcs[randNumInit]} width={(size === "normal") ? 24 : 20.8} height={(size === "normal") ? 24 : 20.8} alt="#" key={1} />
