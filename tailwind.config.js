@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "eric": "url('../public/favicon.png')"
+      },
       keyframes: {
         scrollUp: {
           "100%": { transform: "translateY(0)" }
