@@ -19,12 +19,12 @@ a {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #e0faee;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -34,4 +34,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(143, 143, 143);
-}
+} */
