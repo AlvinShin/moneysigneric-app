@@ -14,7 +14,7 @@ export const Logo: React.FC<{ text: String, size: "normal" | "small" }> = ({
                 <div className="bg-[#fccb05] p-[0.35rem] sm:p-[0.4rem] rounded-[15px]">
                     <div className="bg-[#f3bb15] p-[0.35rem] sm:p-[0.4rem] rounded-[15px]">
                         <div className="bg-[#3b4e52] p-[0.35rem] sm:p-[0.4rem] rounded-[15px]">
-                            <div className="rounded-[15px] bg-[#fff] h-[2.5rem] flex flex-row overflow-hidden">
+                            <div className="z-[2] rounded-[15px] bg-[#fff] h-[2.5rem] flex flex-row overflow-hidden">
                                 {letters.map((e, index) => {
                                     return (
                                         <Slot
