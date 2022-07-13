@@ -54,10 +54,10 @@ export const Slot: React.FC<{
                 style={
                     {
                         "--trans-dist": `${-40 * (index + 1)}px`,
-                        "--trans-time": `${(index + 1) * 0.067}s`,
+                        "--trans-time": `${(index + 1) * 0.1151}s`,
                     } as React.CSSProperties
                 }
-                className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in-out_1_1s_forwards]"
+                className="translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in_1_1.27s_forwards]"
             >
                 <div
                     key={1}
