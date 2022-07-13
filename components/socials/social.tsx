@@ -34,9 +34,9 @@ export class Social extends React.Component<{
                             backgroundColor: this.state.bgColor,
                             borderColor: this.state.borderColor,
                             background: `linear-gradient(-135deg, ${this.state.gradientColor?.from}, ${this.state.gradientColor?.via}, ${this.state.gradientColor?.to})`
-                        } as React.CSSProperties
+                        } 
                     }
-                    className={`bg-gradient-to-tr cursor-pointer select-none border-[2.5px] sm:border-[4px] w-[18rem] sm:w-[20rem] h-[10rem] sm:h-[12rem] rounded-[25px] text-[#fff] flex flex-col justify-evenly hover:scale-[1.02] transition-[200ms] `}
+                    className={`bg-gradient-to-tr cursor-pointer select-none border-[2.5px] sm:border-[4px] w-[18rem] sm:w-[20rem] h-[11rem] sm:h-[12rem] rounded-[25px] text-[#fff] flex flex-col justify-evenly hover:scale-[1.02] transition-[200ms] `}
                 >
                     <div className="mx-[0.5rem] inline-flex items-center">
                         <FontAwesomeIcon icon={this.state.icon} className="h-[2.5rem] mr-[0.5rem]" />
