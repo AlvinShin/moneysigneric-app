@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { Birthday } from "../components/birthday";
-import { YoutubeSection } from "../components/youtubeSection";
+// import { YoutubeSection } from "../components/youtubeSection";
 import { Socials } from "../components/socials/socials";
 
 const Home: NextPage = () => {
@@ -22,7 +22,6 @@ const Home: NextPage = () => {
             <Header />
             <div className="pt-[8rem] pb-[2rem] h-full sm:h-screen w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
                 <Birthday />
-                <YoutubeSection />
                 <Socials />
             </div>
             <Footer />
