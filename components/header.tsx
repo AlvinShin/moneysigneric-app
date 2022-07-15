@@ -21,7 +21,7 @@ export const Header = () => {
     }, []);
 
     return (
-        <div className="absolute h-[8rem] w-full flex justify-center items-center">
+        <div className="h-[8rem] w-full flex justify-center items-center bg-[#fff] dark:bg-[#333232]">
             <Logo text="moneysigneric" size={(width >= 640) ? "normal" : "small"} />
         </div>
     )

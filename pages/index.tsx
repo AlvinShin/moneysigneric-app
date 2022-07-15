@@ -10,7 +10,7 @@ import { Socials } from "../components/socials/socials";
 
 const Home: NextPage = () => {
     return (
-        <div>
+        <div className="h-full">
             <Head>
                 <title>moneysigneric</title>
                 <link rel="shortcut icon" href="/favicon.png" />
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                 <meta name="og:image" content="/favicon.png" />
             </Head>
             <Header />
-            <div className="pt-[8rem] h-[calc(100%+5rem)] w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
+            <div className="h-full sm:h-[calc(100vh-8rem)] w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
                 <Birthday />
                 <Socials />
             </div>
