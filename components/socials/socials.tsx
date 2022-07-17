@@ -60,13 +60,13 @@ export class Socials extends React.Component {
         const lastElement = this.state.cardData[this.state.cardData.length - 1];
         return (
             <>
-                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem] place-items-center">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] place-items-center">
                     {this.state.cardData.map((e, index) => {
 
                         return (
                             <li
                                 key={index + 1}
-                                className={(index + 1 === this.state.cardData.length && !isListEven()) ? "block lg:hidden" : ""}
+                                className={(index + 1 === this.state.cardData.length && !isListEven()) ? "block md:hidden" : ""}
                             >
                                 <Social
                                     typeOfSocial={e.typeOfSocial}
@@ -82,7 +82,7 @@ export class Socials extends React.Component {
                     })}
                 </ul>
                 { !isListEven() && 
-                    <div className="mt-[1.5rem] hidden lg:block">
+                    <div className="mt-[1.5rem] hidden md:block">
                         <Social 
                             typeOfSocial={lastElement.typeOfSocial}
                             link={lastElement.link}
