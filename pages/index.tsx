@@ -5,7 +5,7 @@ import Head from "next/head";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { Birthday } from "../components/birthday";
-import { YoutubeSection } from "../components/youtubeSection";
+// import { YoutubeSection } from "../components/youtubeSection";
 import { Socials } from "../components/socials/socials";
 
 const Home: NextPage = () => {
