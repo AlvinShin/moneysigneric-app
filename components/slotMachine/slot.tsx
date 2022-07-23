@@ -57,13 +57,13 @@ export const Slot: React.FC<{
                         "--trans-time": `${(index + 1) * 0.1151}s`,
                     } as React.CSSProperties
                 }
-                className="z-[1] translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in_1_1.27s_forwards]"
+                className={"z-[1] translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in_1_1.27s_forwards] " + ((index === 0) ? "rounded-r-[15px]" : "") + ((index === textLen) ? "rounded-r-[15px]" : "")}
             >
                 <div
                     key={1}
                     className={
                         "z-[1] text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
-                        + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
+                        + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")
                     }
                 >
                     {letter}
