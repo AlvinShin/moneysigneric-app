@@ -57,7 +57,7 @@ export const Slot: React.FC<{
                         "--trans-time": `${(index + 1) * 0.1151}s`,
                     } as React.CSSProperties
                 }
-                className={"z-[1] translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in_1_1.27s_forwards] " + ((index === 0) ? "rounded-r-[15px]" : "") + ((index === textLen) ? "rounded-r-[15px]" : "")}
+                className={"z-[1] translate-y-[var(--trans-dist)] animate-[scrollUp_var(--trans-time)_ease-in_1_1.27s_forwards] " + ((index === 0) ? "rounded-l-[15px] " : "") + ((index === textLen - 1) ? "rounded-r-[15px] " : "")}
             >
                 <div
                     key={1}
