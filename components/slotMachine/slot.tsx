@@ -74,7 +74,7 @@ export const Slot: React.FC<{
                         <div
                             key={index + 2}
                             className={"z-[1] bg-[#fff] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] py-[8px] flex justify-center items-center "
-                                + ((letterIndex !== 0) ? "border-[#3b4e52] border-l-[2px] " : "rounded-l-[15px]")
+                                + ((letterIndex !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")
                             }
                         >
                             {e}
