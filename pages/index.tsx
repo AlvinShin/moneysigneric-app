@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             <Header />
             <div className="h-full w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
                 <Birthday />
-                <YoutubeSection />
+                {/* <YoutubeSection /> */}
                 <Socials />
             </div>
             <Footer />
