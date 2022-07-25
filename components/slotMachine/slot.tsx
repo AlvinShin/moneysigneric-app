@@ -64,6 +64,8 @@ export const Slot: React.FC<{
                     className={
                         "z-[1] text-[19px] w-[1.3rem] sm:w-[1.5rem] h-[2.5rem] bg-[#fff] flex justify-center items-center uppercase font-[500] "
                         + ((index !== 0) ? "border-[#3b4e52] border-l-[2px] " : "")
+                        + ((index === 0) ? "rounded-l-[15px] " : "")
+                        + ((index === textLen - 1) ? "rounded-r-[15px] " : "")
                     }
                 >
                     {letter}
