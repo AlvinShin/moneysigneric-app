@@ -20,7 +20,7 @@ const Home: NextPage = () => {
                 <meta name="og:image" content="/favicon.png" />
             </Head>
             <Header />
-            <div className="h-full h-min-screen w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
+            <div className="h-full md:h-screen w-full flex flex-col justify-center items-center bg-[#fff] dark:bg-[#333232] text-[#292929] dark:text-[#fff]">
                 <Birthday />
                 {/* <YoutubeSection /> */}
                 <Socials />
